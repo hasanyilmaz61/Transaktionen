@@ -1,0 +1,114 @@
+*{box-sizing: border-box;}
+
+
+:root{--backgraund: rgb(57, 57, 111);
+    --blau: rgb(75, 176, 223);
+    --minus:rgb(155, 13, 13);
+    --pulus:rgb(13, 155, 49);
+    --border: rgb(106, 130, 209);
+    --value: rgb(77, 88, 131);
+}
+
+
+
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+background-color: var(--backgraund);
+flex-direction: column;
+flex-wrap: wrap;
+
+}
+
+.oben{width: 30%;
+display: flex;
+flex-direction: column;
+color: aliceblue;
+
+}
+
+h2{
+    border-bottom: 2px solid var(--border);
+}
+
+.oben>div{display: flex;
+    justify-self: start;
+    margin:10px 0px;
+}
+
+input{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: var(--value);
+   
+}
+
+button{
+background-color:var(--blau);
+color: white;
+font-weight: bold;
+padding: 10px;
+border: none;
+
+}
+
+button:hover{
+
+    background-color: rgb(101, 129, 212);
+}
+.oben>div>span{
+
+    background-color: var(--blau);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    
+}
+ .oben>div>input{
+flex-grow: 1;
+ }
+    
+ .unten{
+    width: 60%;
+display: flex;
+flex-direction: column;
+color: aliceblue;
+
+ }
+
+ #yazdir>div{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ #yazdir{
+display: flex;
+flex-direction:column-reverse;
+
+ }
+ #yazdir>div>span{
+
+    background-color: var(--pulus);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    margin: 10px 0px;
+    
+    
+}
+
+
+#yazdir>div>div{
+    background-color: var(--value);
+    padding: 10px;
+    flex-grow: 1;
+}
